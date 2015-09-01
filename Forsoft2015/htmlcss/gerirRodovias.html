@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="br">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>DigiMon</title>
+    <link rel="icon" type="image/ico" href="img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Digimon</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="inicioAdministradorMinisterio.html" id="logo"><img src="img/logo.png"></a>
+                <a class="navbar-brand top" href="inicioAdministradorMinisterio.html" id="nomeSistema">DigiMon - Digital Monitoring</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alerta <span class="label label-default">Alerta</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alerta <span class="label label-danger">Alerta</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">Ver tudo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nomeUsuario"><i class="fa fa-user"></i> Administrador Ministerio <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                        </li>   
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="inicioAdministradorMinisterio.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="gerirUsuario.html"><i class="fa fa-fw fa-desktop"></i> Gerir Usuários</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Fretes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Motoristas</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Transportadores</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Veículos de Carga</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Postos</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Rodovias</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-edit"></i> Gerir Ocorrência</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Consulta</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-wrench"></i> Relatorios</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+            <header id="cabecalho-rodovia"><h1>Gerir Rodovias</h1><br></header>
+            <section id="principal">
+                <h2 id="h2-cadastrar-alterar">Cadastrar ou Alterar Rodovia</h2>
+                      <form id="form-cadastro">
+                          <div class="input-group">
+                              <label>Código</label>
+                              <input type="text" class="form-control" placeholder="Código"><br>
+                              <label>Nome</label>
+                              <input type="text" class="form-control" placeholder="Nome"><br>
+                              <label>Extensão (Km)</label>
+                              <input type="text" class="form-control" placeholder="Extensão"><br>
+                              <label>Tipo</label></br>
+                              <input id="radio-federal" type="radio" name="tipoRodovia" value="Federal">
+                              <input id="radio-estadual" type="radio" name="tipoRodovia" value="Estadual" form="form-cadastro">
+                              <input id="radio-municipal" type="radio" name="tipoRodovia" value="Municipal" form="form-cadastro"><br>
+
+                              <label>Cidade inicial</label>
+                              <input type="text" class="form-control" placeholder="Cidade inicial"><br>
+                              <label>Cidade final</label>
+                              <input type="text" class="form-control" placeholder="Cidade final"><br>
+
+                              <button id="button-cadastrar-alterar" type="submit" class="btn btn-default">Cadastrar/Alterar</button>
+                          </div>
+                     </form>
+            </section>
+
+            <section id="meio">
+                <h2 id="h2-consultar">Consultar Rodovia</h2>
+                <form id="form-consulta">
+                    <div class="input-group">
+                        <label>Insira um dos dados</label><br>
+                        <input type="text" id="text-consulta" class="form-control" placeholder="Código, nome, extensão, tipo, cidade inicial ou final"><br>
+
+                        <button id="button-consultar" type="submit" class="btn btn-default">Consultar</button>
+                    </div>
+                </form>
+            </section>
+            <section id="lateral">
+                <h2>Tabela de consulta</h2>
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Rodovias</div>
+
+                    <!-- Table -->
+                    <table id="tabela-rodovia" class="table">
+                        <tr id="tabela-rodovia-header"><td>Código</td><td id="td-nome">Nome</td><td>Extensão(km)</td><td>Tipo</td><td id="td-cini">Cidade Inicial</td><td id="td-cfin">Cidade Final</td><td>Estado</td></tr>
+                        <tr><td>1</td><td>BR-123</td><td>111</td><td>Federal</td><td>Rio de Janeiro</td><td>Niterói</td><td>Ativo</td></tr>
+                        <tr><td>2</td><td>BR-321</td><td>123</td><td>Estadual</td><td>Bangu</td><td>Irajá</td><td>Ativo</td></tr>
+                        <tr><td>3</td><td>BR-99</td><td>57</td><td>Municipal</td><td>Nilópolis</td><td>Ilha do Governador</td><td>Ativo</td></tr>
+                        <tr><td>4</td><td>BR-71</td><td>132</td><td>Municipal</td><td>Tribobó</td><td>Xerém</td><td>Inativo</td></tr>
+                    </table>
+                </div><br>
+                    <div id="buttons-muda-estado"><button id="button-ativar" type="button" class="btn btn-default">Ativar</button>
+                        <button id="button-inativar" type="button" class="btn btn-default">Inativar</button>
+                    </div>
+            </section>
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>     
+
+</body>
+
+</html>

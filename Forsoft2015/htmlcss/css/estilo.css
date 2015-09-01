@@ -1,0 +1,282 @@
+body {
+    margin-top: 100px;
+    background-color: #222;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+#wrapper {
+    padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #999;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #000;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+ul.alert-dropdown {
+    width: 200px;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #1e3a70 !important;
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 5px 6px -1px rgba(0, 0, 0, 0.56);
+
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.navbar{
+    background-color: #4d68a1;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+}
+
+.navbar-nav{
+    background-color: #2b519d;
+}
+
+.navbar-nav li:hover{
+    background-color: #cacaca;
+}
+
+#logo img{
+    width: 45px;
+    height: 45px;
+    margin-top: -12px;
+}
+
+#nomeSistema {
+    color: #fff;
+}
+
+.fa{
+    color: #fff;
+}
+
+.caret {
+    color: #fff;
+}
+
+#nomeUsuario{
+    color: #fff;
+}
+
+#contact_map{
+    width: 1050px;
+    height: 590px;
+}
+
+
+.main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main:after {
+    display: block;
+    clear: both;
+    content:"";
+}
+
+.column {
+    width: 50%;
+    min-height: 400px;
+    margin-bottom: 20px;
+    float: right;
+    display: block;
+    border: none;
+    padding-left: 5px;
+    
+}
+
+#pesagem {
+    border-right-style: solid;
+    }
+
+.header {
+    width:100%;
+    height: 130px;
+    background-color: white;
+    clear: both;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10 px;
+    text-align: center;
+}
+
+table{
+    width:70%
+}
+th {
+    height:40px;
+}
+
+#cadastrar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+
+.tab {
+    color: #2b519d;
+    font-weight: bold;
+}
+
+.centralizar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.direitar {
+    float: right;
+}
+
+.esquerdar {
+    float: left;
+}
+
+.textoCentro{
+    text-align: center;
+}
+
+
+.customH4{
+    margin-bottom: 0px;
+    margin-right: 62px;
+}
+
+.customH1{
+    margin-top: 0px;
+}

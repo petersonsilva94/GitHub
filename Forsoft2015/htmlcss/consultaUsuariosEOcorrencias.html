@@ -1,0 +1,192 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="br">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>DigiMon</title>
+    <link rel="icon" type="image/ico" href="img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Digimon</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="inicioAdministradorMinisterio.html" id="logo"><img src="img/logo.png"></a>
+                <a class="navbar-brand top" href="inicioAdministradorMinisterio.html" id="nomeSistema">DigiMon - Digital Monitoring</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alerta <span class="label label-default">Alerta</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alerta <span class="label label-danger">Alerta</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">Ver tudo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nomeUsuario"><i class="fa fa-user"></i> Administrador Ministerio <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                        </li>   
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="inicioAdministradorMinisterio.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="gerirUsuario.html"><i class="fa fa-fw fa-desktop"></i> Gerir Usuários</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Fretes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Motoristas</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Transportadores</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Veículos de Carga</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Postos</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Rodovias</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-edit"></i> Gerir Ocorrência</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Consulta</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-wrench"></i> Relatorios</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+            <section id="meio">
+                <h2 id="h2-consultar">Consultar Usuários</h2>
+                <form id="form-consulta">
+                    <div class="input-group">
+                        <label>Insira um dos dados</label><br>
+                        <input type="text" id="text-consulta" class="form-control" placeholder="Nome, cpf ,cidade">
+                        <button id="button-consultar" type="submit" class="btn btn-default">Consultar</button>
+                    </div>
+                </form>
+            </section>
+            <section id="lateral">
+                <h2>Usuários</h2>
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Usuários</div>
+
+                    <!-- Table -->
+                    <table id="tabela-rodovia" class="table">
+                        <tr id="tabela-rodovia-header"><td>Numero</td><td id="td-nome">Nome</td><td>CPF</td><td>Telefone</td><td id="td-cini">Cidade</td><td id="td-cfin">CEP</td></tr>
+                        <tr><td>1</td><td>Carlos</td><td>13349298321</td><td>(21)99148232</td><td>Rio de Janeiro</td><td>20540003</td></tr>
+                        <tr><td>2</td><td>Ricardo</td><td>15339298321</td><td>(21)99148232</td><td>Bangu</td><td>20540000</td></tr>
+                        <tr><td>3</td><td>Gustavo</td><td>13334298321</td><td>(21)99148232</td><td>Nilópolis</td><td>20340003</td></tr>
+                        <tr><td>4</td><td>Marcos</td><td>13339292321</td><td>(21)99148232</td><td>Tribobó</td><td>20542003</td></tr>
+                    </table>
+                </div><br>
+            </section>
+
+            <section id="meio">
+                <h2 id="h2-consultar">Consultar Ocorrências</h2>
+            </section>
+            <section id="lateral">
+                <h2>Ocorrências</h2>
+                <form id="form-consulta">
+                    <div class="input-group">
+                        <label>Código da ocorrencia</label><br>
+                        <input type="text" id="text-consulta" class="form-control" placeholder="Código">
+                        <button id="button-consultar" type="submit" class="btn btn-default">Consultar</button>
+                    </div>
+                </form>
+                <br>
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Ocorrências</div>
+
+                    <!-- Table -->
+                    <table id="tabela-rodovia" class="table">
+                        <tr>
+                            <td>Código</td>
+                            <td>Ocorrência</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus turpis sed felis efficitur, finibus gravida nunc rutrum. </td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus turpis sed felis efficitur, finibus gravida nunc rutrum. </td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus turpis sed felis efficitur, finibus gravida nunc rutrum. </td>
+                        </tr>
+                                                <tr>
+                            <td>1002</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus turpis sed felis efficitur, finibus gravida nunc rutrum. </td>
+                        </tr>
+
+                    </table>
+                </div><br>
+            </section>
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>     
+
+</body>
+
+</html>

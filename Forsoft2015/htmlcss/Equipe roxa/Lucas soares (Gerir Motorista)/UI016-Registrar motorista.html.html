@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+<html lang="br">
+<head>
+<meta charset="utf-8">
+<title>Cadastrar motorista</title>
+    <link rel="icon" type="image/ico" href="img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Regitrar Motorista</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="inicioAdministradorReceitaFederal.html" id="logo"><img src="img/logo.png"></a>
+                <a class="navbar-brand top" href="inicioAdministradorReceitaFederal.html" id="nomeSistema">DigiMon - Digital Monitoring</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alerta <span class="label label-default">Alerta</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alerta <span class="label label-danger">Alerta</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">Ver tudo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nomeUsuario"><i class="fa fa-user"></i> Administrador Receita Federal <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                        </li>   
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="inicioAdministradorReceitaFederal.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="gerirUsuario.html"><i class="fa fa-fw fa-desktop"></i> Gerir Usuários</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Fretes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-desktop"></i> Gerir Transportadores</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Consulta</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <h1>Bem vindo</h1>
+
+            <!-- Tirar todos os <br> -->
+            <h2>Registro do Caminhoneiro</h2>
+            <form>
+			<p>Primeiro nome:<p>
+			<input type="text" name="firstname">
+			</form>
+			<br>
+			<form>
+			<p>Ultimo nome:<p>
+			<input type="text" name="lastname">
+			</form>
+			<br>
+			<form>
+			<input type="radio" name="tipo" value="autonomo">autonomo
+			<input type="radio" name="tipo" value="registrado">registrado
+			</form>
+			<br>
+			<form>
+			<p>CNH:<p>
+            <input type="text" name="CNPJ">
+            </form>
+            <br>
+			<form>
+            <p>Senha:<p>
+            <input text="text" name="password">
+            <br>
+ 			</form>
+			<br>
+			<form>
+			<p>Nome da empresa:<p>
+			<input type="text" name="user">
+		    </form>
+			<p>Escolha a sua região:<p>
+			<form>
+			<select name="regiao">
+			<option value="Norte">Norte
+			<option value="Nordeste">Nordeste
+			<option value="Centro Oeste">Centro Oeste
+			<option value="Sudeste">Sudeste
+			<option value="Sul">Sul
+			</select>
+			</form>
+			<br>
+			<fieldset>
+			<legend>
+			Tipo de carga e peso:
+			</legend>
+			<form>
+			Tipo de carga <input type="text" size="15">
+			Peso <input type="var" size="3">
+			</form>
+			</fieldset>
+ 			
+            <br>
+            <Form>
+            <select name="Truck">
+ 			<option value="Iveco">Iveco
+			<option value="Ford">Ford
+			<option value="Mercedes-benz">Mercedes-benz
+			<option value="Volkswagen">Volkswagen
+			<option value="Volvo">Volvo
+			</form>
+		   <!-- /.container-fluid -->
+		   <br><br>
+        <!-- /#page-wrapper -->
+
+    </div>
+	
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>     
+   <input type="submit" style="text-align:right" value="Cancelar">
+	<input type="submit"  style="text-align:left" value="Registrar">
+</body>
+
+</html>
+
+
+
+
+
+
